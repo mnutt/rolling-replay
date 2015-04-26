@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVCaptureSession.h>
+
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) AVCaptureSession *avsession;
+@property (strong, nonatomic) AVCaptureDevice *camera;
+@property (weak, nonatomic) IBOutlet UIView *previewView;
 
 @end
 
